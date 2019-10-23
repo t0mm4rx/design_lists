@@ -41,6 +41,10 @@ input::placeholder {
     font-weight: 200;
 }
 
+input:focus::placeholder {
+    color: #8ec5fc;
+}
+
 .icon-input {
     width: 100%;
     display: flex;
@@ -62,7 +66,6 @@ button {
     cursor: pointer;
     border-radius: 5px;
     transition: all .3s ease;
-    animation: fadein 1s ease;
 }
 
 button:hover {

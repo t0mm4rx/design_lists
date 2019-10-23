@@ -62,6 +62,7 @@ div#form-section, div#graphics-section {
     width: 80%;
     position: absolute;
     background-color: white;
+    animation: fadein 1s ease;
 }
 
 .form > * {
