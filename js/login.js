@@ -9,3 +9,13 @@ function next_word()
     setTimeout(next_word, 1000);
 }
 next_word();
+
+document.querySelector("#no-account").onclick = function () {
+    document.querySelector("#form-signup").toggleAttribute('open');
+    document.querySelector("#form").toggleAttribute('open');
+}
+
+document.querySelector("#already-account").onclick = function () {
+    document.querySelector("#form-signup").toggleAttribute('open');
+    document.querySelector("#form").toggleAttribute('open');
+}

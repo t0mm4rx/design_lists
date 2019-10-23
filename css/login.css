@@ -4,11 +4,19 @@ body {
 
 div#form-section, div#graphics-section {
     min-height: 100vh;
-    display: flex;
+    display:flex;
 }
 
 #form-section {
     width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-section h1 {
+    position: absolute;
+    top: 10px;
 }
 
 #graphics-section {
@@ -18,6 +26,7 @@ div#form-section, div#graphics-section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 3;
 }
 
 #graphics-section > img {
@@ -36,24 +45,55 @@ div#form-section, div#graphics-section {
     font-weight: 900;
 }
 
-#form-section {
+#drawer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    position: relative;
+    height: auto;
 }
 
-#form {
+.form {
     display: flex;
     flex-direction: column;
     width: 80%;
+    position: absolute;
+    background-color: white;
 }
 
-#form > * {
+.form > * {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-#form > button {
+.form > button {
     margin-top: 30px;
+}
+
+.no-account {
+    margin-top: 30px;
+    cursor: pointer;
+    color: #555;
+    text-align: center;
+}
+
+#form-signup {
+    left: 100%;
+    transition: all .3s ease;
+}
+
+#form-signup[open] {
+    left: 10%;
+}
+
+#form[open] {
+    left: 10%;
+}
+
+#form {
+    left: -100%;
+    transition: all .3s ease;
 }

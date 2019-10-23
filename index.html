@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Poppins:200,400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/login.css">
-        <link rel="stylesheet" href="./css/login_desktop.css" media="screen and (min-width: 800px)">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
-        <title>Lists - login</title>
-    </head>
-    <body>
 
-        <div id="graphics-section">
-            <h3>Organize your time <span id="word-changer">better</span></h3>
-            <img src="./res/illustration-login.svg" alt="" />
-        </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Poppins:200,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/login_desktop.css" media="screen and (min-width: 800px)">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+    <title>Lists - login</title>
+</head>
 
-        <div id="form-section">
-            <h1>GoldLists</h1>
-            <div id="form">
-                <div class="icon-input"><i class="fas fa-user"></i><input type="text" id="login" placeholder="USERNAME"></div>
+<body>
+
+    <div id="graphics-section">
+        <h3>Organize your time <span id="word-changer">better</span></h3>
+        <img src="./res/illustration-login.svg" alt="" />
+    </div>
+
+    <div id="form-section">
+        <h1>GoldLists</h1>
+        <div id="drawer">
+            <div id="form" class="form" open>
+                <div class="icon-input"><i class="fas fa-user"></i><input type="text" id="login" placeholder="EMAIL"></div>
                 <div class="icon-input"><i class="fas fa-key"></i><input type="password" id="login" placeholder="PASSWORD"></div>
                 <button type="button" name="button">LOGIN<i class="fas fa-arrow-right"></i></button>
+                <span class="no-account" id="no-account">No account yet ?</span>
+            </div>
+            <div id="form-signup" class="form">
+                <div class="icon-input"><i class="fas fa-user"></i><input type="text" id="login" placeholder="EMAIL"></div>
+                <div class="icon-input"><i class="fas fa-key"></i><input type="password" id="login" placeholder="PASSWORD"></div>
+                <div class="icon-input"><i class="fas fa-key"></i><input type="password" id="login" placeholder="COMFIRM PASSWORD"></div>
+                <button type="button" name="button">SIGN UP<i class="fas fa-arrow-right"></i></button>
+                <span class="no-account" id="already-account">Already have an account ?</span>
             </div>
         </div>
+    </div>
 
     <script type="text/javascript" src="./js/login.js"></script>
-    </body>
+</body>
+
 </html>
