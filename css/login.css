@@ -36,13 +36,14 @@ div#form-section, div#graphics-section {
     animation: fadein 2s ease;
 }
 
-#graphics-section span {
-    font-weight: 100;
+#graphics-section h3 {
+    font-weight: 400;
 }
 
 #graphics-section #word-changer {
     font-family: "Poppins";
     font-weight: 900;
+    text-decoration: underline;
 }
 
 #drawer {
